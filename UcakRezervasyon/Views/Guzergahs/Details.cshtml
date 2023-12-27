@@ -1,0 +1,36 @@
+﻿@model UcakRezervasyon.Models.Guzergah
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Guzergah</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.kalkis)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.kalkis)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.varis)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.varis)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ucusSuresi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ucusSuresi)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

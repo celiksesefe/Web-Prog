@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-UcakRezervasyon-9aeef903-999b-4ae9-8a5a-dab2a655a09d")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("UcakRezervasyon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
