@@ -10,10 +10,13 @@ namespace UcakRezervasyon.Models
 
         [ForeignKey("Guzergah")]
         public int guzergahId { get; set; }
+        public Guzergah guzergah { get; set; }
 
         [ForeignKey("Ucak")]
         public int ucakId { get; set; }
+        public Ucak ucak { get; set; }
 
+        public DateTime ucusZamani { get; set; }    
 
 
        

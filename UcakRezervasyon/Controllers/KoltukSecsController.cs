@@ -57,16 +57,26 @@ namespace UcakRezervasyon.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ucusId,koltukNumarasi,kiralanmaDurumu")] KoltukSec koltukSec)
+        public async Task<IActionResult> Create([Bind("Id,ucusId,koltukNumarasi")] KoltukSec koltukSec)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(koltukSec);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
             ViewData["ucusId"] = new SelectList(_context.ucus, "Id", "Id", koltukSec.ucusId);
-            return View(koltukSec);
+
+            bool isSeatAlreadyRented = await _context.koltukSecs.AnyAsync(k => k.ucusId == koltukSec.ucusId && k.koltukNumarasi == koltukSec.koltukNumarasi);
+
+            KoltukSec? koltuk = await _context.koltukSecs.FindAsync(koltukSec.ucusId);
+
+            if(isSeatAlreadyRented)
+            {
+                return View("Basarisiz");
+            }
+            koltukSec.kiralanmaDurumu = true;    
+            
+            _context.Add(koltukSec);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
+
+
         }
 
         // GET: KoltukSecs/Edit/5
@@ -155,14 +165,14 @@ namespace UcakRezervasyon.Controllers
             {
                 _context.koltukSecs.Remove(koltukSec);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool KoltukSecExists(int id)
         {
-          return (_context.koltukSecs?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.koltukSecs?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

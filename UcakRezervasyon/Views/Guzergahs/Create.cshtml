@@ -13,6 +13,11 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="kalkis" class="control-label"></label>
                 <input asp-for="kalkis" class="form-control" />
                 <span asp-validation-for="kalkis" class="text-danger"></span>
@@ -21,6 +26,11 @@
                 <label asp-for="varis" class="control-label"></label>
                 <input asp-for="varis" class="form-control" />
                 <span asp-validation-for="varis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="mesafeKm" class="control-label"></label>
+                <input asp-for="mesafeKm" class="form-control" />
+                <span asp-validation-for="mesafeKm" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ucusSuresi" class="control-label"></label>

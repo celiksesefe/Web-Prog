@@ -17,6 +17,7 @@ namespace UcakRezervasyon.Models
         public int koltukNumarasi { get; set; }
         public bool kiralanmaDurumu { get; set; }
 
+      
 
     
         

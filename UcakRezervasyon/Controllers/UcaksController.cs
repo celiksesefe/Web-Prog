@@ -50,7 +50,7 @@ namespace UcakRezervasyon.Controllers
         public IActionResult Create()
         {
             ViewData["KoltukDuzeniId"] = new SelectList(_context.koltukDuzenis, "Id", "DuzenAdi");
-            ViewData["UcakModeliId"] = new SelectList(_context.ucakModelis, "Id", "Id");
+            ViewData["UcakModeliId"] = new SelectList(_context.ucakModelis, "Id", "UcakMarkasi");
             return View();
         }
 
@@ -62,17 +62,17 @@ namespace UcakRezervasyon.Controllers
         public async Task<IActionResult> Create([Bind("Id,UcakModeliId,KoltukDuzeniId")] Ucak ucak)
         {
             KoltukDuzeni koltukDuzeni = await _context.koltukDuzenis.FindAsync(ucak.KoltukDuzeniId);
-
-            ucak.KoltukSayisi = koltukDuzeni.SutunSayisi * koltukDuzeni.SiraSayisi;
-            if (ModelState.IsValid)
-            {
-                _context.Add(ucak);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
+            UcakModeli ucakModeli = await _context.ucakModelis.FindAsync(ucak.UcakModeliId);
+            ucak.KoltukSayisi = ucakModeli.kapasite - (ucakModeli.kapasite % (koltukDuzeni.SağSira * koltukDuzeni.SolSira));
             ViewData["KoltukDuzeniId"] = new SelectList(_context.koltukDuzenis, "Id", "DuzenAdi", ucak.KoltukDuzeniId);
-            ViewData["UcakModeliId"] = new SelectList(_context.ucakModelis, "Id", "Id", ucak.UcakModeliId);
-            return View(ucak);
+            ViewData["UcakModeliId"] = new SelectList(_context.ucakModelis, "Id", "UcakMarkasi", ucak.UcakModeliId);
+
+            _context.Add(ucak);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+
+
+
         }
 
         // GET: Ucaks/Edit/5
@@ -164,14 +164,14 @@ namespace UcakRezervasyon.Controllers
             {
                 _context.ucaks.Remove(ucak);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UcakExists(int id)
         {
-          return (_context.ucaks?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.ucaks?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

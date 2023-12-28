@@ -1,0 +1,47 @@
+﻿@model IEnumerable<UcakRezervasyon.Models.KoltukDuzeni>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DuzenAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SolSira)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SağSira)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DuzenAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SolSira)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SağSira)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

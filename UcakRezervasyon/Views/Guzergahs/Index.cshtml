@@ -13,10 +13,16 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.kalkis)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.varis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mesafeKm)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ucusSuresi)
@@ -28,10 +34,16 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.kalkis)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.varis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.mesafeKm)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ucusSuresi)

@@ -232,9 +232,16 @@ namespace UcakRezervasyon.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("kalkis")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("mesafeKm")
+                        .HasColumnType("int");
 
                     b.Property<float>("ucusSuresi")
                         .HasColumnType("real");
@@ -260,10 +267,10 @@ namespace UcakRezervasyon.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SiraSayisi")
+                    b.Property<int>("SağSira")
                         .HasColumnType("int");
 
-                    b.Property<int>("SutunSayisi")
+                    b.Property<int>("SolSira")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -355,7 +362,14 @@ namespace UcakRezervasyon.Data.Migrations
                     b.Property<int>("ucakId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("ucusZamani")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("guzergahId");
+
+                    b.HasIndex("ucakId");
 
                     b.ToTable("ucus");
                 });
@@ -439,6 +453,25 @@ namespace UcakRezervasyon.Data.Migrations
                     b.Navigation("KoltukDuzeni");
 
                     b.Navigation("ucakModeli");
+                });
+
+            modelBuilder.Entity("UcakRezervasyon.Models.Ucus", b =>
+                {
+                    b.HasOne("UcakRezervasyon.Models.Guzergah", "guzergah")
+                        .WithMany()
+                        .HasForeignKey("guzergahId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("UcakRezervasyon.Models.Ucak", "ucak")
+                        .WithMany()
+                        .HasForeignKey("ucakId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("guzergah");
+
+                    b.Navigation("ucak");
                 });
 #pragma warning restore 612, 618
         }

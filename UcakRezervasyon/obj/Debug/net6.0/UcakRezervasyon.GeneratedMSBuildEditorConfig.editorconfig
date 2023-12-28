@@ -48,6 +48,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrRHV6ZW5pc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrRHV6ZW5pc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrRHV6ZW5pc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrRHV6ZW5pc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrRHV6ZW5pc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukSecs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrU2Vjc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,6 +86,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukSecs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrU2Vjc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Shared/Basarisiz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJhc2FyaXNpei5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Shared/Error.cshtml]

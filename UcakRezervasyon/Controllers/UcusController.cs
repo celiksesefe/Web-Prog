@@ -22,9 +22,8 @@ namespace UcakRezervasyon.Controllers
         // GET: Ucus
         public async Task<IActionResult> Index()
         {
-              return _context.ucus != null ? 
-                          View(await _context.ucus.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.ucus'  is null.");
+            var applicationDbContext = _context.ucus.Include(u => u.guzergah).Include(u => u.ucak);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Ucus/Details/5
@@ -36,6 +35,8 @@ namespace UcakRezervasyon.Controllers
             }
 
             var ucus = await _context.ucus
+                .Include(u => u.guzergah)
+                .Include(u => u.ucak)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (ucus == null)
             {
@@ -48,6 +49,8 @@ namespace UcakRezervasyon.Controllers
         // GET: Ucus/Create
         public IActionResult Create()
         {
+            ViewData["guzergahId"] = new SelectList(_context.guzergahs, "Id", "Name");
+            ViewData["ucakId"] = new SelectList(_context.ucaks, "Id", "Id");
             return View();
         }
 
@@ -56,15 +59,16 @@ namespace UcakRezervasyon.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,guzergahId,ucakId")] Ucus ucus)
+        public async Task<IActionResult> Create([Bind("Id,guzergahId,ucakId,ucusZamani")] Ucus ucus)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(ucus);
+            ViewData["guzergahId"] = new SelectList(_context.guzergahs, "Id", "Name", ucus.guzergahId);
+            ViewData["ucakId"] = new SelectList(_context.ucaks, "Id", "Id", ucus.ucakId);
+            _context.Add(ucus);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            return View(ucus);
+            
+           
+          
         }
 
         // GET: Ucus/Edit/5
@@ -80,6 +84,8 @@ namespace UcakRezervasyon.Controllers
             {
                 return NotFound();
             }
+            ViewData["guzergahId"] = new SelectList(_context.guzergahs, "Id", "Name", ucus.guzergahId);
+            ViewData["ucakId"] = new SelectList(_context.ucaks, "Id", "Id", ucus.ucakId);
             return View(ucus);
         }
 
@@ -88,16 +94,16 @@ namespace UcakRezervasyon.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,guzergahId,ucakId")] Ucus ucus)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,guzergahId,ucakId,ucusZamani")] Ucus ucus)
         {
             if (id != ucus.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
-                try
+            ViewData["guzergahId"] = new SelectList(_context.guzergahs, "Id", "Name", ucus.guzergahId);
+            ViewData["ucakId"] = new SelectList(_context.ucaks, "Id", "Id", ucus.ucakId);
+            try
                 {
                     _context.Update(ucus);
                     await _context.SaveChangesAsync();
@@ -114,8 +120,8 @@ namespace UcakRezervasyon.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
-            }
-            return View(ucus);
+            
+        
         }
 
         // GET: Ucus/Delete/5
@@ -127,6 +133,8 @@ namespace UcakRezervasyon.Controllers
             }
 
             var ucus = await _context.ucus
+                .Include(u => u.guzergah)
+                .Include(u => u.ucak)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (ucus == null)
             {
