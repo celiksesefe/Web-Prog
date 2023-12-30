@@ -12,8 +12,8 @@ namespace UcakRezervasyon.Models
         [ForeignKey("Ucus")]
         public int ucusId { get; set; }
         public Ucus Ucus { get; set; }
-
-
+        [StringLength(11,ErrorMessage ="Türkiye Cumhuriyeti Kimlik Numarası 11 Hane Olmalıdır")]
+        public string tcNo { get; set; }
         public int koltukNumarasi { get; set; }
         public bool kiralanmaDurumu { get; set; }
 

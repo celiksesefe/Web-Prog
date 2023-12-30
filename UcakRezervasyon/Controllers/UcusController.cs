@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +12,8 @@ using UcakRezervasyon.Models;
 
 namespace UcakRezervasyon.Controllers
 {
+    [Authorize]
+
     public class UcusController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -27,6 +31,8 @@ namespace UcakRezervasyon.Controllers
         }
 
         // GET: Ucus/Details/5
+        [Authorize(Roles = "admin")]
+
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.ucus == null)
@@ -47,6 +53,8 @@ namespace UcakRezervasyon.Controllers
         }
 
         // GET: Ucus/Create
+        [Authorize(Roles = "admin")]
+
         public IActionResult Create()
         {
             ViewData["guzergahId"] = new SelectList(_context.guzergahs, "Id", "Name");
@@ -59,6 +67,8 @@ namespace UcakRezervasyon.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
+
         public async Task<IActionResult> Create([Bind("Id,guzergahId,ucakId,ucusZamani")] Ucus ucus)
         {
             ViewData["guzergahId"] = new SelectList(_context.guzergahs, "Id", "Name", ucus.guzergahId);
@@ -72,6 +82,8 @@ namespace UcakRezervasyon.Controllers
         }
 
         // GET: Ucus/Edit/5
+        [Authorize(Roles = "admin")]
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.ucus == null)
@@ -94,6 +106,8 @@ namespace UcakRezervasyon.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
+
         public async Task<IActionResult> Edit(int id, [Bind("Id,guzergahId,ucakId,ucusZamani")] Ucus ucus)
         {
             if (id != ucus.Id)
@@ -125,6 +139,8 @@ namespace UcakRezervasyon.Controllers
         }
 
         // GET: Ucus/Delete/5
+        [Authorize(Roles = "admin")]
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.ucus == null)
@@ -147,6 +163,8 @@ namespace UcakRezervasyon.Controllers
         // POST: Ucus/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
+
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.ucus == null)

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,8 @@ using UcakRezervasyon.Models;
 
 namespace UcakRezervasyon.Controllers
 {
+    [Authorize]
+
     public class GuzergahsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -26,7 +29,7 @@ namespace UcakRezervasyon.Controllers
                           View(await _context.guzergahs.ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.guzergahs'  is null.");
         }
-
+        [Authorize(Roles ="admin")]
         // GET: Guzergahs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -46,6 +49,7 @@ namespace UcakRezervasyon.Controllers
         }
 
         // GET: Guzergahs/Create
+        [Authorize(Roles = "admin")]
         public IActionResult Create()
         {
             return View();
@@ -56,6 +60,7 @@ namespace UcakRezervasyon.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Create([Bind("Id,Name,kalkis,varis,mesafeKm,ucusSuresi")] Guzergah guzergah)
         {
             if (ModelState.IsValid)
@@ -68,6 +73,7 @@ namespace UcakRezervasyon.Controllers
         }
 
         // GET: Guzergahs/Edit/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.guzergahs == null)
@@ -88,6 +94,7 @@ namespace UcakRezervasyon.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,kalkis,varis,mesafeKm,ucusSuresi")] Guzergah guzergah)
         {
             if (id != guzergah.Id)
@@ -119,6 +126,8 @@ namespace UcakRezervasyon.Controllers
         }
 
         // GET: Guzergahs/Delete/5
+        [Authorize(Roles = "admin")]
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.guzergahs == null)
@@ -139,6 +148,8 @@ namespace UcakRezervasyon.Controllers
         // POST: Guzergahs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
+
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.guzergahs == null)

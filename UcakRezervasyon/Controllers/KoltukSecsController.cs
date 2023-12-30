@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -22,8 +20,6 @@ namespace UcakRezervasyon.Controllers
         }
 
         // GET: KoltukSecs
-        [Authorize(Roles = "admin")]
-
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.koltukSecs.Include(k => k.Ucus);
@@ -61,23 +57,25 @@ namespace UcakRezervasyon.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ucusId,koltukNumarasi")] KoltukSec koltukSec)
+        public async Task<IActionResult> Create([Bind("Id,ucusId,tcNo,koltukNumarasi,kiralanmaDurumu")] KoltukSec koltukSec)
         {
-            ViewData["ucusId"] = new SelectList(_context.ucus, "Id", "Id", koltukSec.ucusId);
+
+           
+            ViewData["ucusId"] = new SelectList(_context.ucus, "Id", "Id");
 
             bool isSeatAlreadyRented = await _context.koltukSecs.AnyAsync(k => k.ucusId == koltukSec.ucusId && k.koltukNumarasi == koltukSec.koltukNumarasi);
 
-            KoltukSec? koltuk = await _context.koltukSecs.FindAsync(koltukSec.ucusId);
 
-            if(isSeatAlreadyRented)
+            if (isSeatAlreadyRented)
             {
                 return View("Basarisiz");
             }
-            koltukSec.kiralanmaDurumu = true;    
-            
+            koltukSec.kiralanmaDurumu = true;
+
             _context.Add(koltukSec);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+
 
 
 
@@ -105,7 +103,7 @@ namespace UcakRezervasyon.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ucusId,koltukNumarasi,kiralanmaDurumu")] KoltukSec koltukSec)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ucusId,tcNo,koltukNumarasi,kiralanmaDurumu")] KoltukSec koltukSec)
         {
             if (id != koltukSec.Id)
             {
