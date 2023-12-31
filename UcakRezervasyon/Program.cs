@@ -1,18 +1,54 @@
+using Localization.Services;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.CodeAnalysis.Host;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using System.Globalization;
+using System.Reflection;
 using UcakRezervasyon.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-
+#region Localization
+//Step 1
+builder.Services.AddSingleton<LanguageService>();
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+builder.Services.AddMvc().AddViewLocalization().AddDataAnnotationsLocalization(options => {
+    options.DataAnnotationLocalizerProvider = (type, factory) => {
+        var assemblyName = new AssemblyName(typeof(SharedResource).GetTypeInfo().Assembly.FullName);
+        return factory.Create("ShareResource", assemblyName.Name);
+    };
+});
+builder.Services.Configure<RequestLocalizationOptions>(options => {
+    var supportedCultures = new List<CultureInfo> {
+        new CultureInfo("tr-TR"),
+         new CultureInfo("fr-FR")
+    };
+    options.DefaultRequestCulture = new RequestCulture(culture: "tr-TR", uiCulture: "tr-TR");
+    options.SupportedCultures = supportedCultures;
+    options.SupportedUICultures = supportedCultures;
+    options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
+});
+#endregion
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+{
+    options.Password.RequireDigit = false;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequiredLength = 3;
+    options.SignIn.RequireConfirmedAccount = false;
+
+
+}).AddEntityFrameworkStores<ApplicationDbContext>()
+       .AddDefaultUI()
+       .AddDefaultTokenProviders();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -31,6 +67,7 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
 app.UseRouting();
 
@@ -41,7 +78,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
-app.MapRazorPages(); // admin rolu oluþturuluyor
+app.MapRazorPages(); 
 using (var scope = app.Services.CreateScope())
 {
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
@@ -56,7 +93,7 @@ using (var scope = app.Services.CreateScope())
     }
 }
 using (var scope = app.Services.CreateScope())
-{ //administrator kullanýcýsý oluþturuluyor
+{ 
     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
     string email = "admin@admin.com";
     string password = "Sau123*";

@@ -13,16 +13,16 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="ucusId" class="control-label"></label>
+                <label asp-for="ucusId" class="control-label">@_localization.Getkey("ucusId")</label>
                 <select asp-for="ucusId" class="form-control" asp-items="ViewBag.ucusId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="tcNo" class="control-label"></label>
+                <label>@_localization.Getkey("tcNo")</label>
                 <input asp-for="tcNo" class="form-control" />
                 <span asp-validation-for="tcNo" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="koltukNumarasi" class="control-label"></label>
+                <label>@_localization.Getkey("koltukNumarasi")</label>
                 <input asp-for="koltukNumarasi" class="form-control" />
                 <span asp-validation-for="koltukNumarasi" class="text-danger"></span>
             </div>

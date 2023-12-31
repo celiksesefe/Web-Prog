@@ -256,3 +256,10 @@ C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon\bin\Debug\net6.0\run
 C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon\bin\Debug\net6.0\fr-FR\UcakRezervasyon.resources.dll
+C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net6.0\UcakRezervasyon.csproj.GenerateResource.cache
+C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net6.0\fr-FR\UcakRezervasyon.resources.dll
+C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net6.0\UcakRezervasyon.Resources.SharedResource.fr-FR.resources
+C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon\bin\Debug\net6.0\tr-TR\UcakRezervasyon.resources.dll
+C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net6.0\UcakRezervasyon.Resources.SharedResource.tr-TR.resources
+C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net6.0\tr-TR\UcakRezervasyon.resources.dll

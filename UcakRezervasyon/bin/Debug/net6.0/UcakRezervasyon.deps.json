@@ -17,6 +17,14 @@
         },
         "runtime": {
           "UcakRezervasyon.dll": {}
+        },
+        "resources": {
+          "fr-FR/UcakRezervasyon.resources.dll": {
+            "locale": "fr-FR"
+          },
+          "tr-TR/UcakRezervasyon.resources.dll": {
+            "locale": "tr-TR"
+          }
         }
       },
       "Humanizer/2.14.1": {
