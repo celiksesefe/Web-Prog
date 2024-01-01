@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace UcakRezervasyon.Controllers
         }
 
         // GET: KoltukSecs
+        [Authorize(Roles ="admin")]
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.koltukSecs.Include(k => k.Ucus);
@@ -51,8 +53,7 @@ namespace UcakRezervasyon.Controllers
             ViewData["ucusId"] = new SelectList(_context.ucus, "Id", "Id");
             return View();
         }
-
-        // POST: KoltukSecs/Create
+                // POST: KoltukSecs/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -82,6 +83,7 @@ namespace UcakRezervasyon.Controllers
         }
 
         // GET: KoltukSecs/Edit/5
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.koltukSecs == null)
@@ -99,10 +101,9 @@ namespace UcakRezervasyon.Controllers
         }
 
         // POST: KoltukSecs/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,ucusId,tcNo,koltukNumarasi,kiralanmaDurumu")] KoltukSec koltukSec)
         {
             if (id != koltukSec.Id)
@@ -135,6 +136,7 @@ namespace UcakRezervasyon.Controllers
         }
 
         // GET: KoltukSecs/Delete/5
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.koltukSecs == null)

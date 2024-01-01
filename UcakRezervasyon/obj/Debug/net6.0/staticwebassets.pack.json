@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\aslan\\source\\repos\\UcakRezervasyon\\UcakRezervasyon\\wwwroot\\images\\img7.jpg",
+      "PackagePath": "staticwebassets\\images\\img7.jpg"
+    },
+    {
       "Id": "C:\\Users\\aslan\\source\\repos\\UcakRezervasyon\\UcakRezervasyon\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

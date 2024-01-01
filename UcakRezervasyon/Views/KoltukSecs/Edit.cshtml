@@ -13,36 +13,36 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
+            <div class="form-field col-lg-6">
                 <label asp-for="ucusId" class="control-label"></label>
                 <select asp-for="ucusId" class="form-control" asp-items="ViewBag.ucusId"></select>
                 <span asp-validation-for="ucusId" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
+            <div class="form-field col-lg-6">
                 <label asp-for="tcNo" class="control-label"></label>
                 <input asp-for="tcNo" class="form-control" />
                 <span asp-validation-for="tcNo" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-field col-lg-6">
                 <label asp-for="koltukNumarasi" class="control-label"></label>
                 <input asp-for="koltukNumarasi" class="form-control" />
                 <span asp-validation-for="koltukNumarasi" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
+            <div class="form-field col-lg-6 form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="kiralanmaDurumu" /> @Html.DisplayNameFor(model => model.kiralanmaDurumu)
                 </label>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="form-field col-lg-6">
+                <input type="submit" value="Save" class="submit-btn" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">@_localization.Getkey("listeyedon")</a>
 </div>
 
 @section Scripts {

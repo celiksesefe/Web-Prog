@@ -58,8 +58,6 @@ namespace UcakRezervasyon.Controllers
         }
 
         // POST: KoltukDuzenis/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,DuzenAdi,SolSira,SağSira")] KoltukDuzeni koltukDuzeni)
@@ -90,8 +88,6 @@ namespace UcakRezervasyon.Controllers
         }
 
         // POST: KoltukDuzenis/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,DuzenAdi,SolSira,SağSira")] KoltukDuzeni koltukDuzeni)

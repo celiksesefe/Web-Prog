@@ -10,42 +10,42 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" class="contact-form row">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            <div class="form-field col-lg-6">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-field col-lg-6">
                 <label asp-for="kalkis" class="control-label"></label>
                 <input asp-for="kalkis" class="form-control" />
                 <span asp-validation-for="kalkis" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-field col-lg-6">
                 <label asp-for="varis" class="control-label"></label>
                 <input asp-for="varis" class="form-control" />
                 <span asp-validation-for="varis" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-field col-lg-6">
                 <label asp-for="mesafeKm" class="control-label"></label>
                 <input asp-for="mesafeKm" class="form-control" />
                 <span asp-validation-for="mesafeKm" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-field col-lg-6">
                 <label asp-for="ucusSuresi" class="control-label"></label>
                 <input asp-for="ucusSuresi" class="form-control" />
                 <span asp-validation-for="ucusSuresi" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-field col-lg-6">
+                <input type="submit" value="Create" class="submit-btn" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">@_localization.Getkey("listeyedon")</a>
 </div>
 
 @section Scripts {

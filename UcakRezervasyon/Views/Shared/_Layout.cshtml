@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/UcakRezervasyon.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/rent4u-1.0.0/css/bootstrap.css"  asp-append-version="true" />
+
 </head>
 <body>
     <header>
@@ -36,8 +38,8 @@
                 </div>
             </div>
         </nav>
-        <div class="dropdown">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> Localization </button>
+        <div class="dropdown" style="background-color:brown">
+            <button type="button" class="submit-btn dropdown-toggle" data-bs-toggle="dropdown"> Localization </button>
             <ul class="dropdown-menu">
                 <li>
                     <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-TR" class="dropdown-item">
@@ -60,7 +62,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - UcakRezervasyon - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            FlyPgs - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

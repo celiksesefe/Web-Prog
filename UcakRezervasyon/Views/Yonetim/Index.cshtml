@@ -2,4 +2,52 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    
 }
+<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" style="background-color:crimson">
+    <ul class="navbar-nav flex-grow-1">
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">@_localization.Getkey("Home")</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-black " asp-area="" asp-controller="Mesafe" asp-action="Index">API Çalıştır</a>
+        </li>
+        <li class="nav-item">
+
+            <a class=" text-warning bg-dark" asp-area="" asp-controller="KoltukDuzenis" asp-action="Index">KoltukDuzenis Ana Sayfa</a>
+            <a class=" text-warning bg-dark " asp-area="" asp-controller="KoltukDuzenis" asp-action="Create">KoltukDuzeni Oluştur</a>
+            <a class="text-warning bg-dark" asp-area="" asp-controller="KoltukDuzenis" asp-action="Details">KoltukDuzeni Detaylar</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="text-info bg-dark" asp-area="" asp-controller="KoltukSecs" asp-action="Index">KoltukSecs Ana Sayfa</a>
+            <a class="text-info bg-dark" asp-area="" asp-controller="KoltukSecs" asp-action="Create">KoltukSecs Oluştur</a>
+            <a class="text-info bg-dark" asp-area="" asp-controller="KoltukSecs" asp-action="Details">KoltukSecs Detaylar</a>
+        </li>
+        <li class="nav-item">
+            <a class="text-success bg-dark" asp-area="" asp-controller="UcakModelis" asp-action="Index">UcakModelis Ana Sayfa</a>
+            <a class="text-success bg-dark" asp-area="" asp-controller="UcakModelis" asp-action="Create">UcakModelis Oluştur</a>
+            <a class="text-success bg-dark" asp-area="" asp-controller="UcakModelis" asp-action="Details">UcakModelis Detaylar</a>
+        </li>
+        <li class="nav-item">
+            <a class="text-info bg-dark" asp-area="" asp-controller="Ucaks" asp-action="Index">Ucaks Ana Sayfa</a>
+            <a class="text-info bg-dark" asp-area="" asp-controller="Ucaks" asp-action="Create">Ucaks Oluştur</a>
+            <a class="text-info bg-dark" asp-area="" asp-controller="Ucaks" asp-action="Details">Ucaks Detaylar</a>
+        </li>
+        <li class="nav-item">
+            <a class="text-success bg-dark" asp-area="" asp-controller="Ucus" asp-action="Index">Ucus Ana Sayfa</a>
+            <a class="text-success bg-dark" asp-area="" asp-controller="Ucus" asp-action="Create">Ucus Oluştur</a>
+            <a class="text-success bg-dark" asp-area="" asp-controller="Ucus" asp-action="Details">Ucus Detaylar</a>
+        </li>
+        <li class="nav-item">
+
+            <a class="text-warning bg-dark" asp-area="" asp-controller="Guzergahs" asp-action="Index">Guzergahs Ana Sayfa</a>
+            <a class="text-warning bg-dark" asp-area="" asp-controller="Guzergahs" asp-action="Create">Guzergahs Oluştur</a>
+            <a class="text-warning bg-dark" asp-area="" asp-controller="Guzergahs" asp-action="Details">Guzergahs Detaylar</a>
+        </li>
+        
+
+
+    </ul>
+    
+</div>

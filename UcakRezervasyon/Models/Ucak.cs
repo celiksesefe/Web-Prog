@@ -14,9 +14,10 @@ namespace UcakRezervasyon.Models
 
         [ForeignKey("KoltukDuzeni")]
         public int KoltukDuzeniId { get; set; }
-        public KoltukDuzeni KoltukDuzeni { get; set; } 
+        public KoltukDuzeni KoltukDuzeni { get; set; }
 
-        public int? KoltukSayisi { get; set; }
+        
+        public int? KoltukSayisi { get; set; } //controllerda hesaplanıyor
 
      
 

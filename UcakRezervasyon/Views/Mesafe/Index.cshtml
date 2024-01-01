@@ -12,22 +12,22 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.kalkis)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.varis)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.mesafeKm)
             </th>
-            <th>
+            <th scope="col">
                 @Html.DisplayNameFor(model => model.ucusSuresi)
             </th>
-            <th></th>
+            <th scope="col"></th>
         </tr>
     </thead>
     <tbody>
@@ -48,11 +48,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.ucusSuresi)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
+            
         </tr>
 }
     </tbody>

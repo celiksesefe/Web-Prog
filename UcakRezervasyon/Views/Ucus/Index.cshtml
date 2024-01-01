@@ -7,47 +7,64 @@
 <h1>Index</h1>
 
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                UçuşId
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.guzergah)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ucak)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ucusZamani)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                
-                <td>
-                    @Html.DisplayFor(modelItem=> item.Id)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.guzergah.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ucak.Id)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ucusZamani)
-                </td>
-                <td>
+<div class="bg-image h-100" style="background-image: url('c:\users\aslan\source\repos\ucakrezervasyon\ucakrezervasyon\wwwroot\images\img7.jpg');">
+    
+    <div class="mask d-flex align-items-center h-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="card mask-custom">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-borderless text-white mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">
+                                                UçuşId
+                                            </th>
+                                            <th scope="col">
+                                                @Html.DisplayNameFor(model => model.guzergah)
+                                            </th>
+                                            <th scope="col">
+                                                @Html.DisplayNameFor(model => model.ucak)
+                                            </th>
+                                            <th scope="col">
+                                                @Html.DisplayNameFor(model => model.ucusZamani)
+                                            </th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
 
-                    <a asp-action="Create" asp-controller="KoltukSecs">Bilet Al</a>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem=> item.Id)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.guzergah.Name)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.ucak.Id)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.ucusZamani)
+                                                </td>
+                                                <td>
 
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+                                                    <a asp-action="Create" asp-controller="KoltukSecs">@_localization.Getkey("BiletAl")</a>
+
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -9,8 +9,7 @@ using System.Reflection;
 using UcakRezervasyon.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-#region Localization
-//Step 1
+
 builder.Services.AddSingleton<LanguageService>();
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 builder.Services.AddMvc().AddViewLocalization().AddDataAnnotationsLocalization(options => {
@@ -19,6 +18,7 @@ builder.Services.AddMvc().AddViewLocalization().AddDataAnnotationsLocalization(o
         return factory.Create("ShareResource", assemblyName.Name);
     };
 });
+
 builder.Services.Configure<RequestLocalizationOptions>(options => {
     var supportedCultures = new List<CultureInfo> {
         new CultureInfo("tr-TR"),
@@ -29,15 +29,16 @@ builder.Services.Configure<RequestLocalizationOptions>(options => {
     options.SupportedUICultures = supportedCultures;
     options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
 });
-#endregion
-// Add services to the container.
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
+    
     options.Password.RequireDigit = false;
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireLowercase = false;
@@ -61,7 +62,6 @@ if (app.Environment.IsDevelopment())
 else
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -92,23 +92,6 @@ using (var scope = app.Services.CreateScope())
             await roleManager.CreateAsync(new IdentityRole(role));
     }
 }
-using (var scope = app.Services.CreateScope())
-{ 
-    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
-    string email = "admin@admin.com";
-    string password = "Sau123*";
-    if (await userManager.FindByEmailAsync(email) == null)
-    {
-        var user = new IdentityUser();
-        user.UserName = email;
-        user.Email = email;
 
-        await userManager.CreateAsync(user, password);
-
-
-        await userManager.AddToRoleAsync(user, "admin");
-
-    }
-}
 
 app.Run();
