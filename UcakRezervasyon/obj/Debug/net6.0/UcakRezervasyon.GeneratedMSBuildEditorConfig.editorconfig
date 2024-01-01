@@ -9,201 +9,203 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UcakRezervasyon
 build_property.RootNamespace = UcakRezervasyon
-build_property.ProjectDir = C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon\
+build_property.ProjectDir = C:\Users\Efe\Downloads\Compressed\ucakrezervasyonCommit\ucakrezervasyonCommit\UcakRezervasyon\UcakRezervasyon\UcakRezervasyon\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\aslan\source\repos\UcakRezervasyon\UcakRezervasyon
+build_property.MSBuildProjectDirectory = C:\Users\Efe\Downloads\Compressed\ucakrezervasyonCommit\ucakrezervasyonCommit\UcakRezervasyon\UcakRezervasyon\UcakRezervasyon
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Guzergahs/Create.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Guzergahs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V6ZXJnYWhzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Guzergahs/Delete.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Guzergahs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V6ZXJnYWhzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Guzergahs/Details.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Guzergahs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V6ZXJnYWhzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Guzergahs/Edit.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Guzergahs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V6ZXJnYWhzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Guzergahs/Index.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Guzergahs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3V6ZXJnYWhzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Home/Index.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Home/Privacy.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Create.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrRHV6ZW5pc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Delete.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrRHV6ZW5pc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Details.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrRHV6ZW5pc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Edit.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrRHV6ZW5pc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Index.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/KoltukDuzenis/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrRHV6ZW5pc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukSecs/Create.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/KoltukSecs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrU2Vjc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukSecs/Delete.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/KoltukSecs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrU2Vjc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukSecs/Details.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/KoltukSecs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrU2Vjc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukSecs/Edit.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/KoltukSecs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrU2Vjc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/KoltukSecs/Index.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/KoltukSecs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29sdHVrU2Vjc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Mesafe/Index.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Mesafe/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYWZlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Shared/Basarisiz.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Shared/Basarisiz.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJhc2FyaXNpei5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Shared/Error.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/UcakModelis/Create.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/UcakModelis/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWNha01vZGVsaXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/UcakModelis/Delete.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/UcakModelis/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWNha01vZGVsaXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/UcakModelis/Details.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/UcakModelis/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWNha01vZGVsaXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/UcakModelis/Edit.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/UcakModelis/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWNha01vZGVsaXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/UcakModelis/Index.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/UcakModelis/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWNha01vZGVsaXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Ucaks/Create.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Ucaks/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWNha3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Ucaks/Delete.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Ucaks/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWNha3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Ucaks/Details.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Ucaks/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWNha3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Ucaks/Edit.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Ucaks/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWNha3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Ucaks/Index.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Ucaks/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWNha3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Ucus/Create.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Ucus/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWN1c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Ucus/Delete.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Ucus/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWN1c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Ucus/Details.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Ucus/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWN1c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Ucus/Edit.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Ucus/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWN1c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Ucus/Index.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Ucus/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWN1c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Yonetim/Index.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Yonetim/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWW9uZXRpbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/_ViewImports.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/_ViewStart.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aslan/source/repos/UcakRezervasyon/UcakRezervasyon/Views/Shared/_Layout.cshtml]
+[C:/Users/Efe/Downloads/Compressed/ucakrezervasyonCommit/ucakrezervasyonCommit/UcakRezervasyon/UcakRezervasyon/UcakRezervasyon/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-oxk5virvah
